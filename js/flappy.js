@@ -69,6 +69,7 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
 
 function Passaro(alturaJogo) {
     let voando = false // pássaro começa sem voar
+    let touchY = null; // começa sem toque
 
     this.elemento = novoElemento('img', 'passaro')
     this.elemento.src = 'imgs/fish.gif'
@@ -89,6 +90,23 @@ function Passaro(alturaJogo) {
         } else {
             this.setY(novoY) // o pássaro fica na posição que ele tentou ir
         }
+
+        //touch
+        this.elemento.addEventListener('touchstart', (event) => {
+            voando = true;
+            touchY = event.touches[0].clientY;
+        });
+        
+        this.elemento.addEventListener('touchmove', (event) => {
+            const newY = event.touches[0].clientY;
+            if (touchY && newY < touchY) {
+                voando = true;
+            } else if (touchY && newY > touchY) {
+                voando = false;
+            }
+            touchY = newY;
+        });
+        
     }
 
     this.setY(alturaJogo / 2) // seta a posição inicial do pássaro
