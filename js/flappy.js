@@ -68,48 +68,32 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
 }
 
 function Passaro(alturaJogo) {
-    let voando = false; // começa sem voar
-    let touchY = null; // começa sem toque
+    let voando = false // pássaro começa sem voar
 
-    this.elemento = novoElemento('img', 'passaro');
-    this.elemento.src = 'imgs/fish.gif';
+    this.elemento = novoElemento('img', 'passaro')
+    this.elemento.src = 'imgs/fish.gif'
 
-    this.getY = () => parseInt(this.elemento.style.bottom.split('px')[0]); // pega a posição do pássaro
-    this.setY = y => this.elemento.style.bottom = `${y}px`; // seta a posição do pássaro
+    this.getY = () => parseInt(this.elemento.style.bottom.split('px')[0]) // pega a posição do pássaro
+    this.setY = y => this.elemento.style.bottom = `${y}px` // seta a posição do pássaro
 
-    window.onkeydown = e => voando = true; // quando a tecla é pressionada, o pássaro voa
-    window.onkeyup = e => voando = false; // quando a tecla é solta, o pássaro para de voar
-
-    this.elemento.addEventListener('touchstart', (event) => {
-        voando = true;
-        touchY = event.touches[0].clientY;
-    });
-
-    this.elemento.addEventListener('touchmove', (event) => {
-        const newY = event.touches[0].clientY;
-        if (touchY && newY < touchY) {
-            voando = true;
-        } else if (touchY && newY > touchY) {
-            voando = false;
-        }
-        touchY = newY;
-    });
+    window.onkeydown = e => voando = true // quando a tecla é pressionada, o pássaro voa
+    window.onkeyup = e => voando = false // quando a tecla é solta, o pássaro para de voar    
 
     this.animar = () => {
-        const novoY = this.getY() + (voando ? 6 : -4); // se voando for true, o pássaro sobe, senão, ele desce
-        const alturaMaxima = alturaJogo - this.elemento.clientHeight; // altura máxima que o pássaro pode subir
-        if (novoY <= 0) { // se o pássaro tentar subir além do limite superior
-            this.setY(0); // o pássaro fica no limite superior
-        } else if (novoY >= alturaMaxima) { // se o pássaro tentar descer além do limite inferior
-            this.setY(alturaMaxima); // o pássaro fica no limite inferior
+        const novoY = this.getY() + (voando ? 8  : -5) // se voando for true, o pássaro sobe, senão, ele desce
+        const alturaMaxima = alturaJogo - this.elemento.clientHeight // altura máxima que o pássaro pode subir
+        if(novoY <= 0) { // se o pássaro tentar subir além do limite superior
+            this.setY(0) // o pássaro fica no limite superior
+        } else if(novoY >= alturaMaxima) { // se o pássaro tentar descer além do limite inferior
+            this.setY(alturaMaxima) // o pássaro fica no limite inferior
         } else {
-            this.setY(novoY); // o pássaro fica na posição que ele tentou ir
-        }
-    };
+            this.setY(novoY) // o pássaro fica na posição que ele tentou ir
+        }        
+        
+    }
 
-    this.setY(alturaJogo / 2); // seta a posição inicial do pássaro
+    this.setY(alturaJogo / 2) // seta a posição inicial do pássaro
 }
-
 
 function Progresso() {
     this.elemento = novoElemento('span', 'progresso') // cria um elemento span com a classe progresso
@@ -153,7 +137,7 @@ function FlappyBird() {
     const largura = areaDoJogo.clientWidth // pega a largura da área do jogo
 
     const progresso = new Progresso() // cria um novo progresso
-    const barreiras = new Barreiras(altura, largura, 200, 400, // cria as barreiras
+    const barreiras = new Barreiras(altura, largura, 230, 400, // cria as barreiras
         () => progresso.atualizarPontos(++pontos)) // atualiza os pontos
     const passaro = new Passaro(altura)
 
