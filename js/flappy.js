@@ -80,7 +80,7 @@ function Passaro(alturaJogo) {
     window.onkeyup = e => voando = false // quando a tecla é solta, o pássaro para de voar
 
     this.animar = () => {
-        const novoY = this.getY() + (voando ? 6  : -5) // se voando for true, o pássaro sobe, senão, ele desce
+        const novoY = this.getY() + (voando ? 6  : -4) // se voando for true, o pássaro sobe, senão, ele desce
         const alturaMaxima = alturaJogo - this.elemento.clientHeight // altura máxima que o pássaro pode subir
         if(novoY <= 0) { // se o pássaro tentar subir além do limite superior
             this.setY(0) // o pássaro fica no limite superior
