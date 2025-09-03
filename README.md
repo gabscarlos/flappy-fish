@@ -49,6 +49,10 @@ A aplicação mantém a essência do jogo original. A cada vez que o peixe passa
 - Sistema de pontuação que contabiliza os pontos a cada cano ultrapassado.
 - Exibição da pontuação atual em tempo real.
 
+  ![](https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/2.jpg)
+
+![](https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/3.jpg)
+
 ## 💎 Links úteis 💎
 
 - [Flappy Bird](https://pt.wikipedia.org/wiki/Flappy_Bird)
