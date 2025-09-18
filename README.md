@@ -55,4 +55,4 @@ A aplicação mantém a essência do jogo original. A cada vez que o peixe passa
 
 ## 💎 Links úteis 💎
 
-- [Flappy Bird](https://pt.wikipedia.org/wiki/Flappy_Bird)
+- [Jogar Flappy Fish](https://gabscarlos.github.io/flappy-fish/)
