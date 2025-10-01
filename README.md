@@ -51,7 +51,7 @@ A aplicação mantém a essência do jogo original. A cada vez que o peixe passa
 
   ![](https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/2.png)
 
-![](https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/3.png)
+  ![](https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/3.png)
 
 ## 💎 Links úteis 💎
 
