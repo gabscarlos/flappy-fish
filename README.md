@@ -1,53 +1,54 @@
 # 🐟 Flappy Fish
 
 <div align="center">
-<img src="https://github.com/portfolio-projetos-dev/flappy-bird/raw/main/.gitassets/capa.png" width="350" />
-
-<div data-badges>
-    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-    <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-</div>
+  <img src="https://github.com/portfolio-projetos-dev/flappy-bird/raw/main/.gitassets/capa.png" width="350" />
 </div>
 
-Este projeto recria a experiência do famoso jogo Flappy Bird, desafiando os jogadores a controlar um pássaro em um ambiente repleto de obstáculos. O objetivo é nadar o máximo possível, evitando obstáculos que aparecem ao longo do caminho. Para fazer o pássaro subir, o jogador deve pressionar a barra de espaço e soltá-la para deixar o pássaro descer, criando uma dinâmica de controle que exige precisão e timing.
+<div align="center">
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" />
+</div>
 
-A aplicação mantém a essência do jogo original. A cada vez que o peixe passa por um cano, o jogador ganha pontos, incentivando a concorrência e a busca por novas pontuações. O jogo continua até que o pássaro colida com um obstáculo, momento em que a partida termina. Para jogar uma nova partida, o jogador pode atualizar a página.
+---
 
-## 🖥️ Como rodar este projeto 🖥️
+## 🎮 Sobre o projeto
 
-### Requisitos:
+**Flappy Fish** é uma recriação divertida e leve do clássico *Flappy Bird*, onde o jogador controla um peixinho que precisa atravessar obstáculos para conquistar a maior pontuação possível.  
+O controle é simples e viciante: pressione a **barra de espaço** para nadar e solte para descer.
 
-- [Node.js](https://nodejs.org/pt) instalado
+---
 
-### Execução:
+## ✨ Destaques
 
-1. Clone este repositório:
+- 🎯 Jogabilidade fluida e responsiva  
+- 🐠 Obstáculos gerados aleatoriamente  
+- 💫 Sistema de pontuação em tempo real  
+- 🧩 Design leve, colorido e otimizado para navegador  
 
-   ```sh
-   git clone https://github.com/gabscarlos/flappy-fish
-   ```
+---
 
-2. Acesse o diretório do projeto:
+<div align="center">
+  <img src="https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/2.png" width="45%" />
+  <img src="https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/3.png" width="45%" />
+</div>
 
-   ```sh
-   cd flappy-bird
-   ```
+---
 
-3. Abra o arquivo `index.html` clicando duas vezes sobre ele.
+## 🚀 Experimente agora
 
-## 🗒️ Features do projeto 🗒️
+👉 **[Jogar Flappy Fish](https://gabscarlos.github.io/flappy-fish/)**  
 
-- Controle do pássaro através da barra de espaço, onde a barra pressionada fará o pássaro subir e soltá-la fará o pássaro descer.
-- Geração aleatória de obstáculos (canos) ao longo do caminho.
-- Sistema de pontuação que contabiliza os pontos a cada cano ultrapassado.
-- Exibição da pontuação atual em tempo real.
+---
 
-  ![](https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/2.png)
+## 🧠 Tecnologias utilizadas
 
-  ![](https://github.com/gabscarlos/flappy-fish/raw/main/.gitassets/3.png)
+- HTML5  
+- CSS3  
+- JavaScript  
 
-## 💎 Links úteis 💎
+---
 
-- <a href="https://gabscarlos.github.io/flappy-fish/" target="_blank">Jogar Flappy Fish</a>
-
+<div align="center">
+  <sub>Projeto desenvolvido por <strong>Gabriel Carlos</strong> — veja mais em <a href="https://gabscarlos.github.io/" target="_blank">meu portfólio</a> 🎨</sub>
+</div>
