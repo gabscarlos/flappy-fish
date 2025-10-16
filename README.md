@@ -50,5 +50,5 @@ O controle é simples e viciante: pressione a **barra de espaço** para nadar e 
 ---
 
 <div align="center">
-  <sub>Projeto desenvolvido por <strong>Gabriel Carlos</strong> — veja mais em <a href="https://gabscarlos.github.io/" target="_blank">meu portfólio</a> 🎨</sub>
+  <sub>Projeto desenvolvido por <strong>Gabriel Carlos</strong> — veja mais em <a href="https://gabscarlos.vercel.app/" target="_blank">meu portfólio</a> 🎨</sub>
 </div>
